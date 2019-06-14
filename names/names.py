@@ -66,8 +66,9 @@ sorted_binary = BinarySearchTree(names_1[0])
 duplicates = []
 for x in range(1, len(names_1)):
     sorted_binary.insert(names_1[x])
-
+# using contains to check if names_2 are in sorted binary list
 for i in range(0, len(names_2)):
+    # see if list contains item from name 2, then append the item to the list
     if sorted_binary.contains(names_2[i]):
         duplicates.append(names_2[i])
 
